@@ -1,0 +1,17 @@
+# Compiled Python files
+__pycache__/
+
+# Generated package files
+dist/
+build/
+*.egg-info/
+
+# Generated pytest files
+.pytest_cache
+
+# Generated coverage files
+htmlcov/
+.coverage
+
+# Editor files
+.vscode/

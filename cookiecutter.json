@@ -1,0 +1,9 @@
+{
+  "full_name": "First Last",
+  "email": "first@example.com",
+  "github_username": "firstlast",
+  "project_name": "Python Package Template",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_description": "Lightweight Python package template using my preferred configuration for new projects.",
+  "version": "0.1.0"
+}
