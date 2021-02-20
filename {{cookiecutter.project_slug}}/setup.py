@@ -5,6 +5,16 @@ from setuptools import find_packages, setup
 with open("README.md", encoding="utf-8") as f:
     LONG_DESCRIPTION = f.read()
 
+REQUIREMENTS = []
+
+DEVELOPMENT_REQUIREMENTS = [
+    "black",
+    "coverage[toml]",
+    "pylint",
+    "pytest",
+    "python-language-server",
+]
+
 setup(
     name="{{ cookiecutter.project_slug }}",
     version="{{ cookiecutter.version }}",
@@ -20,4 +30,6 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=True,
+    install_requires=REQUIREMENTS,
+    extras_require={"dev": DEVELOPMENT_REQUIREMENTS},
 )

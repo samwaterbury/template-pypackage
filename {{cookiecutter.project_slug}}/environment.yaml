@@ -1,0 +1,6 @@
+name: {{cookiecutter.project_slug}}
+dependencies:
+  - pip
+  - python
+  - pip:
+    - --editable .
